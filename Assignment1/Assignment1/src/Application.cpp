@@ -99,7 +99,7 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Assignment1", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Assignment1 - Andrew Vu 400186041", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -264,7 +264,7 @@ int main()
         model = glm::rotate(model, get_sun_rotate_angle_around_itself(day), glm::vec3(0.0f, 1.0f, 0.0f)); //rotate sun on y axis
         view = glm::lookAt(
             glm::vec3(50,50,100), //camera position
-            glm::vec3(moon_x,0, moon_z), //coordinate where camera is looking at
+            glm::vec3(0,0,0), //coordinate where camera is looking at
             glm::vec3(0,1,0)
             );
         projection = glm::perspective(glm::radians(30.0f), 4.0f/3.0f, 0.1f, 1000.0f);
