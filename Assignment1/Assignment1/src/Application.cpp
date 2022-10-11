@@ -130,7 +130,7 @@ int main()
     // model, view, projection, and vertices information is passed through the vertex shader to get position
     // rgb information is also passed through vertex shader
     // frag shader recieves vertex colour and sets fragment colour
-    Shader lightingShader("1.colors.vs", "1.colors.fs");
+    Shader lightingShader("colors.vs", "colors.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // format is (x,y,x,r,g,b) for each triangle (12 triangles in total to make cube)
